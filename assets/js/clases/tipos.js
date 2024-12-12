@@ -2,59 +2,57 @@
 
 import Animal from "./animal.js";
 
-const audioPlay = document.getElementById("audioPlay");
-
-class Leon extends Animal {
+new class Leon extends Animal {
     constructor(name, age, img, comments, sound) {
         super(name, age, img, comments, sound);
     }
     Rugir() {
-        console.log(this.getSonido())
-        audioPlay.src = `assets/sounds/${this.getSonido()}`;
+        console.log(this.getSound())
+        audioPlay.src = `assets/sounds/${this.getSound()}`;
         audioPlay.play();
     }
 }
 
-class Lobo extends Animal {
+new class Lobo extends Animal {
     constructor(name, age, img, comments, sound) {
         super(name, age, img, comments, sound);
     }
     Aullar() {
-        console.log(this.getSonido())
-        audioPlay.src = `assets/sounds/${this.getSonido()}`;
+        console.log(this.getSound())
+        audioPlay.src = `assets/sounds/${this.getSound()}`;
         audioPlay.play();
     }
 }
 
-class Oso extends Animal {
+new class Oso extends Animal {
     constructor(name, age, img, comments, sound) {
         super(name, age, img, comments, sound);
     }
     Gruñir() {
-        console.log(this.getSonido())
-        audioPlay.src = `assets/sounds/${this.getSonido()}`;
+        console.log(this.getSound())
+        audioPlay.src = `assets/sounds/${this.getSound()}`;
         audioPlay.play();
     }
 }
 
-class Serpiente extends Animal {
+new class Serpiente extends Animal {
     constructor(name, age, img, comments, sound) {
         super(name, age, img, comments, sound);
     }
     Sisear() {
-        console.log(this.getSonido())
-        audioPlay.src = `assets/sounds/${this.getSonido()}`;
+        console.log(this.getSound())
+        audioPlay.src = `assets/sounds/${this.getSound()}`;
         audioPlay.play();
     }
 }
 
-class Aguila extends Animal {
+new class Aguila extends Animal {
     constructor(name, age, img, comments, sound) {
         super(name, age, img, comments, sound);
     }
     Chillar() {
-        console.log(this.getSonido())
-        audioPlay.src = `assets/sounds/${this.getSonido()}`;
+        console.log(this.getSound())
+        audioPlay.src = `assets/sounds/${this.getSound()}`;
         audioPlay.play();
     }
 }
